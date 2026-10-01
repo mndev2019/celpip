@@ -1,6 +1,7 @@
-
 import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import { HiMenu, HiX } from "react-icons/hi";
+import logo from '../assets/Image/logo.jpeg'
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,148 +9,120 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#EEE8FF]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
-        <div className="flex items-center justify-between h-[72px]">
+        <div className="flex items-center justify-between h-[80px]">
 
           {/* ================= LOGO ================= */}
-          <a href="#" className="flex items-center gap-2 group">
-
-            <div className="
-              w-10
-              h-10
-              rounded-xl
-              bg-gradient-to-br
-              from-[#7C4DFF]
-              to-[#A66CFF]
-              flex
-              items-center
-              justify-center
-              shadow-md
-              shadow-purple-200
-              group-hover:scale-105
-              transition-transform
-            ">
-              <span className="text-white font-bold text-lg">
-                E
-              </span>
-            </div>
-
-            <div>
-              <h1 className="text-xl font-bold text-[#34205F] leading-none">
-                EduPrep
-              </h1>
-
-              <p className="text-[10px] text-[#8B819A] tracking-wider uppercase mt-1">
-                English Learning
-              </p>
-            </div>
-
-          </a>
+          <Link to="/" className="flex items-center group">
+            <img
+              src={logo}
+              alt="EduPrep Logo"
+              className="
+      w-[150px]
+      h-auto
+      object-contain
+      group-hover:scale-[1.02]
+      transition-transform
+    "
+            />
+          </Link>
 
           {/* ================= DESKTOP MENU ================= */}
           <div className="hidden md:flex items-center gap-8">
 
-            {/* <a
-              href="#"
-              className="relative text-[#34205F] font-medium py-2 group"
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                `relative py-2 font-medium transition-colors ${isActive
+                  ? "text-[#34205F] font-bold"
+                  : "text-[#6F6680] hover:text-[#7C4DFF]"
+                }`
+              }
             >
-              Home
+              {({ isActive }) => (
+                <>
+                  Home
+                  {isActive && (
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                  )}
+                </>
+              )}
+            </NavLink>
 
-              <span className="
-                absolute
-                left-0
-                bottom-0
-                w-full
-                h-0.5
-                bg-[#7C4DFF]
-                scale-x-100
-                transition-transform
-              >
-              </span>
-            </a> */}
-            <a
-              href="/about"
-              className="
-              text-[#6F6680]
-              hover:text-[#7C4DFF]
-              font-medium
-              transition-colors
-              "
+            <NavLink
+              to="/about"
+              className={({ isActive }) =>
+                `relative py-2 font-medium transition-colors ${isActive
+                  ? "text-[#34205F] font-bold"
+                  : "text-[#6F6680] hover:text-[#7C4DFF]"
+                }`
+              }
             >
-              About
-            </a>
+              {({ isActive }) => (
+                <>
+                  About
+                  {isActive && (
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                  )}
+                </>
+              )}
+            </NavLink>
 
-            <a
-              href="#"
-              className="
-                text-[#6F6680]
-                hover:text-[#7C4DFF]
-                font-medium
-                transition-colors
-              "
+            <NavLink
+              to="/practice"
+              className={({ isActive }) =>
+                `relative py-2 font-medium transition-colors ${isActive
+                  ? "text-[#34205F] font-bold"
+                  : "text-[#6F6680] hover:text-[#7C4DFF]"
+                }`
+              }
             >
-              Practice
-            </a>
+              {({ isActive }) => (
+                <>
+                  Practice
+                  {isActive && (
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                  )}
+                </>
+              )}
+            </NavLink>
 
-            <a
-              href="#"
-              className="
-                text-[#6F6680]
-                hover:text-[#7C4DFF]
-                font-medium
-                transition-colors
-              "
+            <NavLink
+              to="/resources"
+              className={({ isActive }) =>
+                `relative py-2 font-medium transition-colors ${isActive
+                  ? "text-[#34205F] font-bold"
+                  : "text-[#6F6680] hover:text-[#7C4DFF]"
+                }`
+              }
             >
-              Resources
-            </a>
+              {({ isActive }) => (
+                <>
+                  Resources
+                  {isActive && (
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                  )}
+                </>
+              )}
+            </NavLink>
 
-            <a
-              href="/contact"
-              className="
-                text-[#6F6680]
-                hover:text-[#7C4DFF]
-                font-medium
-                transition-colors
-              "
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `relative py-2 font-medium transition-colors ${isActive
+                  ? "text-[#34205F] font-bold"
+                  : "text-[#6F6680] hover:text-[#7C4DFF]"
+                }`
+              }
             >
-              Contact
-            </a>
-
-            {/* Login */}
-            <button
-              className="
-                px-5
-                py-2.5
-                rounded-xl
-                border
-                border-[#DDD3F2]
-                text-[#6841D8]
-                font-semibold
-                hover:bg-[#F7F4FF]
-                hover:border-[#C8B8F2]
-                transition-all
-              "
-            >
-              Login
-            </button>
-
-            {/* CTA */}
-            <button
-              className="
-                px-5
-                py-2.5
-                rounded-xl
-                bg-[#FF8066]
-                hover:bg-[#F06E54]
-                text-white
-                font-semibold
-                shadow-md
-                shadow-orange-100
-                hover:-translate-y-0.5
-                transition-all
-              "
-            >
-              Get Started
-            </button>
+              {({ isActive }) => (
+                <>
+                  Contact
+                  {isActive && (
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                  )}
+                </>
+              )}
+            </NavLink>
 
           </div>
 
@@ -157,14 +130,10 @@ function Navbar() {
           <button
             className="
               md:hidden
-              w-11
-              h-11
-              rounded-xl
+              w-11 h-11 rounded-xl
               bg-[#F7F4FF]
               text-[#6841D8]
-              flex
-              items-center
-              justify-center
+              flex items-center justify-center
               text-2xl
               hover:bg-[#EEE8FF]
               transition
@@ -174,7 +143,6 @@ function Navbar() {
           >
             {isOpen ? <HiX /> : <HiMenu />}
           </button>
-
         </div>
       </div>
 
@@ -184,21 +152,17 @@ function Navbar() {
           md:hidden
           overflow-hidden
           bg-white
-          border-t
-          border-[#EEE8FF]
-          transition-all
-          duration-300
+          border-t border-[#EEE8FF]
+          transition-all duration-300
           ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}
         `}
       >
         <div className="px-5 py-5 flex flex-col gap-2">
 
-          <a
-            href="#"
+          <Link
+            to="/"
             className="
-              px-4
-              py-3
-              rounded-xl
+              px-4 py-3 rounded-xl
               bg-[#F7F4FF]
               text-[#6841D8]
               font-semibold
@@ -206,14 +170,12 @@ function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             Home
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/about"
             className="
-              px-4
-              py-3
-              rounded-xl
+              px-4 py-3 rounded-xl
               text-[#6F6680]
               hover:bg-[#F7F4FF]
               hover:text-[#6841D8]
@@ -222,14 +184,12 @@ function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             About
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/practice"
             className="
-              px-4
-              py-3
-              rounded-xl
+              px-4 py-3 rounded-xl
               text-[#6F6680]
               hover:bg-[#F7F4FF]
               hover:text-[#6841D8]
@@ -238,14 +198,12 @@ function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             Practice
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/resources"
             className="
-              px-4
-              py-3
-              rounded-xl
+              px-4 py-3 rounded-xl
               text-[#6F6680]
               hover:bg-[#F7F4FF]
               hover:text-[#6841D8]
@@ -254,14 +212,12 @@ function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             Resources
-          </a>
+          </Link>
 
-          <a
-            href="#"
+          <Link
+            to="/contact"
             className="
-              px-4
-              py-3
-              rounded-xl
+              px-4 py-3 rounded-xl
               text-[#6F6680]
               hover:bg-[#F7F4FF]
               hover:text-[#6841D8]
@@ -270,16 +226,14 @@ function Navbar() {
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
+          </Link>
 
           <div className="grid grid-cols-2 gap-3 mt-3">
 
             <button
               className="
-                py-3
-                rounded-xl
-                border
-                border-[#DDD3F2]
+                py-3 rounded-xl
+                border border-[#DDD3F2]
                 text-[#6841D8]
                 font-semibold
                 hover:bg-[#F7F4FF]
@@ -291,8 +245,7 @@ function Navbar() {
 
             <button
               className="
-                py-3
-                rounded-xl
+                py-3 rounded-xl
                 bg-[#FF8066]
                 hover:bg-[#F06E54]
                 text-white
@@ -304,7 +257,6 @@ function Navbar() {
             </button>
 
           </div>
-
         </div>
       </div>
     </nav>
@@ -312,4 +264,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
