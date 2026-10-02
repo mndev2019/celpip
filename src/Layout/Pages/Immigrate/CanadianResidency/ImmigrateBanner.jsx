@@ -1,7 +1,5 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
-
-import bannerImage from "../../../../assets/Image/Canadian flag.jfif";
 import { useNavigate } from "react-router-dom";
 
 function ImmigrateBanner(props) {
@@ -11,7 +9,7 @@ function ImmigrateBanner(props) {
 
       {/* Background Image */}
       <img
-        src={bannerImage}
+        src={props.img}
         alt="Canadian Residency"
         className="absolute inset-0 w-full h-full object-cover"
       />

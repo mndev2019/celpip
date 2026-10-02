@@ -6,6 +6,7 @@ import ContactUs from './Layout/Pages/Contact'
 import About from './Layout/Pages/About'
 import CanadianResidency from './Layout/Pages/Immigrate/CanadianResidency'
 import CanadianCitizenship from './Layout/Pages/Immigrate/CanadianCitizenship'
+import AustralianVisa from './Layout/Pages/Immigrate/AustralianVisa'
 
 
 
@@ -26,6 +27,7 @@ function App() {
           {/* immigration */}
           <Route path='/canadian-residency' element={<CanadianResidency/>}/>
           <Route path='/canadian-citizenship' element={<CanadianCitizenship/>}/>
+          <Route path='/australian-visa' element={<AustralianVisa/>}/>
         
         </Route>
 

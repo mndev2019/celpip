@@ -1,38 +1,54 @@
 import React from "react";
 import {
-  FiCode,
-  FiDatabase,
-  FiMonitor,
-  FiSettings,
+  FiBookOpen,
+  FiHeadphones,
+  FiEdit3,
+  FiMic,
+  FiAward,
+ FiGlobe, 
   FiArrowRight,
 } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 function AboutServices() {
+  const navigate = useNavigate();
   const services = [
     {
-      icon: FiCode,
-      title: "Software Solutions",
+      icon: FiBookOpen,
+      title: "English Test Preparation",
       description:
-        "We develop practical and user-friendly software solutions designed around business requirements and everyday digital needs.",
+        "Get structured preparation support to understand the test format, question types, and key requirements before your exam.",
     },
     {
-      icon: FiDatabase,
-      title: "Digital Platforms",
+      icon: FiHeadphones,
+      title: "Listening & Reading Practice",
       description:
-        "We create reliable digital platforms that help businesses organize their processes, manage information, and work more efficiently.",
+        "Build stronger comprehension skills through focused practice designed around common listening and reading question formats.",
     },
     {
-      icon: FiMonitor,
-      title: "Web Development",
+      icon: FiEdit3,
+      title: "Writing Support",
       description:
-        "We build modern, responsive, and easy-to-use web experiences that help businesses establish and grow their digital presence.",
+        "Improve your written English with practical guidance on organizing ideas, expressing information clearly, and completing writing tasks effectively.",
     },
     {
-      icon: FiSettings,
-      title: "Technology Support",
+      icon: FiMic,
+      title: "Speaking Practice",
       description:
-        "We provide technology-focused support and guidance to help businesses maintain smooth, reliable, and effective digital operations.",
+        "Develop greater confidence in spoken English with practice activities focused on clear communication and effective responses.",
     },
+    // {
+    //   icon: FiAward,
+    //   title: "Test Information & Guidance",
+    //   description:
+    //     "Understand test sections, timing, preparation requirements, scoring information, and other important details in one place.",
+    // },
+    // {
+    //   icon: FiGlobe,
+    //   title: "Immigration Language Support",
+    //   description:
+    //     "Access helpful guidance for understanding English language requirements related to Canadian and Australian immigration pathways.",
+    // },
   ];
 
   return (
@@ -104,7 +120,7 @@ function AboutServices() {
                   {service.description}
                 </p>
 
-             
+
 
               </div>
             );
@@ -135,8 +151,8 @@ function AboutServices() {
 
           </div>
 
-          <a
-            href="/contact"
+          <button
+            onClick={() => navigate('/contact')}
             className="group mt-6 inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-5 py-3.5 text-sm font-bold text-[#211A3A] transition-all duration-300 hover:-translate-y-1 hover:bg-[#EEE8FF] lg:mt-0"
           >
             Talk to Us
@@ -144,7 +160,7 @@ function AboutServices() {
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-[#EEE8FF] text-[#7C4DFF] transition-transform duration-300 group-hover:translate-x-1">
               <FiArrowRight size={15} />
             </span>
-          </a>
+          </button>
 
         </div>
 

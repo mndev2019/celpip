@@ -7,8 +7,10 @@ import {
   FiCheckCircle,
   FiArrowRight,
 } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 const CitizenshipTest = () => {
+  const navigate = useNavigate();
   const testSections = [
     {
       icon: <FiHeadphones />,
@@ -172,13 +174,13 @@ const CitizenshipTest = () => {
                 supplied information.
               </p>
 
-              <a
-                href="/contact"
+              <button
+                onClick={()=> navigate('/contact')}
                 className="mt-6 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-semibold text-purple-700 transition hover:-translate-y-1 hover:shadow-lg"
               >
                 Contact Us
                 <FiArrowRight />
-              </a>
+              </button>
             </div>
           </div>
 

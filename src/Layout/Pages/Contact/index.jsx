@@ -3,7 +3,7 @@ import {
   FiClock,
   FiMail,
   FiMapPin,
-  FiMessageCircle,
+  FiHeadphones,
   FiPhone,
   FiArrowRight,
 } from "react-icons/fi";
@@ -11,7 +11,9 @@ import EnquiryForm from "./EnquiryForm";
 
 
 
+
 function ContactUs() {
+
   return (
     <main className="min-h-screen bg-[#FAF8FF]">
 
@@ -127,29 +129,23 @@ function ContactUs() {
               </div>
 
 
-              {/* FAQ Card */}
+              {/* Support Card */}
               <div className="rounded-[30px] border border-[#E5DDF3] bg-gradient-to-br from-[#F2ECFF] to-white p-7 sm:p-8">
 
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#7C4DFF] shadow-sm">
-                  <FiMessageCircle size={22} />
+                  <FiHeadphones size={22} />
                 </div>
 
                 <h3 className="mt-5 text-xl font-extrabold text-[#211A3A]">
-                  Have a quick question?
+                  Need help with registration?
                 </h3>
 
                 <p className="mt-3 text-sm leading-6 text-[#6B6680]">
-                  You may find the answer you need in our frequently asked
-                  questions.
+                  Our team is here to help you with test information, registration,
+                  and other queries.
                 </p>
 
-                <a
-                  href="#"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#7C4DFF] transition-colors hover:text-[#5D35D5]"
-                >
-                  Visit FAQs
-                  <FiArrowRight size={16} />
-                </a>
+               
 
               </div>
 

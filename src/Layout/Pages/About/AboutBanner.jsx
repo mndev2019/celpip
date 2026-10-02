@@ -5,8 +5,10 @@ import {
   FiCode,
   FiUsers,
 } from "react-icons/fi";
+import { useNavigate } from "react-router-dom";
 
 function AboutBanner() {
+  const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden bg-[#FAF8FF] py-16 sm:py-20 lg:min-h-[620px] lg:py-24">
 
@@ -75,8 +77,8 @@ function AboutBanner() {
             {/* CTA */}
             <div className="mt-9 flex flex-wrap gap-4">
 
-              <a
-                href="/contact"
+              <button
+               onClick={()=> navigate('/contact')}
                 className="group inline-flex items-center gap-3 rounded-full bg-[#211A3A] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#211A3A]/10 transition-all duration-300 hover:-translate-y-1 hover:bg-[#7C4DFF] hover:shadow-[#7C4DFF]/25"
               >
               Contact Us
@@ -84,7 +86,7 @@ function AboutBanner() {
                 <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/10 transition-transform duration-300 group-hover:translate-x-1">
                   <FiArrowRight size={15} />
                 </span>
-              </a>
+              </button>
 
             </div>
 
