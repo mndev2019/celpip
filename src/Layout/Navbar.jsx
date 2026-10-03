@@ -375,7 +375,7 @@ function Navbar() {
           </Link>
 
           {/* BUTTONS */}
-          <div className="grid grid-cols-2 gap-3 mt-3">
+          {/* <div className="grid grid-cols-2 gap-3 mt-3">
 
             <button
               className="
@@ -405,7 +405,7 @@ function Navbar() {
               Get Started
             </button>
 
-          </div>
+          </div> */}
 
         </div>
       </div>
