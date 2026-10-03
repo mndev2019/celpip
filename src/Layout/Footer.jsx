@@ -132,14 +132,14 @@ function Footer() {
             {/* Email */}
 
             <a
-              href="mailto:info@example.com"
+              href="mailto:Madirana2005@gmail.com"
               className="mt-6 inline-flex items-center gap-3 text-sm font-medium text-white/75 transition-colors hover:text-white"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-white/10">
                 <FiMail size={17} />
               </span>
 
-              info@example.com
+              Madirana2005@gmail.com
             </a>
 
             {/* Social */}
@@ -201,7 +201,7 @@ function Footer() {
               {/* Mobile */}
 
               <a
-                href="tel:+911234567890"
+                href="tel:+918447733777"
                 className="flex items-start gap-3 text-sm text-white/55 transition-colors hover:text-white"
               >
                 <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#A66CFF]">
@@ -214,7 +214,7 @@ function Footer() {
                   </span>
 
                   <span className="mt-1 block">
-                    +91 12345 67890
+                    +91 8447733777
                   </span>
                 </span>
               </a>
@@ -222,7 +222,7 @@ function Footer() {
               {/* Email */}
 
               <a
-                href="mailto:info@example.com"
+                href="mailto:Madirana2005@gmail.com"
                 className="flex items-start gap-3 text-sm text-white/55 transition-colors hover:text-white"
               >
                 <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#A66CFF]">
@@ -235,7 +235,7 @@ function Footer() {
                   </span>
 
                   <span className="mt-1 block break-all">
-                    info@example.com
+                    Madirana2005@gmail.com
                   </span>
                 </span>
               </a>
@@ -254,8 +254,8 @@ function Footer() {
                   </span>
 
                   <span className="mt-1 block leading-6">
-                    Your Business Address,<br />
-                    City, State, India
+                    A-69 Arya Nagar Apartment , IP Extension , <br />
+                    Delhi-110092,
                   </span>
                 </span>
 
@@ -275,7 +275,7 @@ function Footer() {
             © {new Date().getFullYear()} Madhav IT Services. All rights reserved.
           </p>
 
-         
+
 
         </div>
 

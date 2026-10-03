@@ -49,7 +49,7 @@ function WhyChooseSection() {
         {/* Heading */}
         <div className="max-w-3xl mb-16">
           <span className="inline-block bg-[#15112B] text-[#C9B6FF] px-4 py-2 rounded-full text-sm font-semibold">
-            Why Learners Trust CELPIP
+            Why Learners Trust Madhav IT Services
           </span>
 
           <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[#15112B] leading-tight">
@@ -60,7 +60,7 @@ function WhyChooseSection() {
           <div className="w-24 h-1 bg-[#FF6B4A] rounded-full mt-5 mb-6"></div>
 
           <p className="text-[#4A4565] text-lg leading-8">
-            CELPIP provides a faster, more flexible, and trusted English testing experience,
+            Madhav IT Services provides a faster, more flexible, and trusted English testing experience,
             giving you confidence during one of the most important stages of your immigration journey.
           </p>
         </div>

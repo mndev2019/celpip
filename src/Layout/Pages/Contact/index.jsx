@@ -79,24 +79,69 @@ function ContactUs() {
                 </p>
 
                 <div className="mt-8 space-y-5">
+                  <div className="flex items-center gap-4">
 
-                  <ContactItem
-                    icon={FiMail}
-                    title="Email"
-                    text="info@example.com"
-                  />
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                      <FiMail size={19} />
+                    </div>
 
-                  <ContactItem
-                    icon={FiPhone}
-                    title="Phone"
-                    text="+1 (000) 000-0000"
-                  />
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-white/40">
+                        Email
+                      </p>
 
-                  <ContactItem
-                    icon={FiClock}
-                    title="Support Hours"
-                    text="Monday – Friday, 9:00 AM – 5:00 PM"
-                  />
+                      <a
+                        href="mailto:Madirana2005@gmail.com"
+                        className="mt-1 block text-sm font-medium text-white/80 hover:text-white transition-colors"
+                      >
+                        Madirana2005@gmail.com
+                      </a>
+                    </div>
+
+                  </div>
+                  <div className="flex items-center gap-4">
+
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                      <FiPhone size={19} />
+                    </div>
+
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-white/40">
+                        Phone
+                      </p>
+
+                      <a
+                        href="tel:+918447733777"
+                        className="mt-1 block text-sm font-medium text-white/80 hover:text-white transition-colors"
+                      >
+                        +91 8447733777
+                      </a>
+                    </div>
+
+                  </div>
+                  <div className="flex items-center gap-4">
+
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                      <FiMapPin size={19} />
+                    </div>
+
+                    <div>
+                      <p className="text-xs font-bold uppercase tracking-wider text-white/40">
+                        Address
+                      </p>
+
+                      <p className="mt-1 text-sm font-medium text-white/80">
+                        A-69 Arya Nagar Apartment , IP Extension , Delhi-110092
+                      </p>
+                    </div>
+
+                  </div>
+
+
+
+
+
+
 
                 </div>
               </div>
@@ -119,7 +164,9 @@ function ContactUs() {
                 </p>
 
                 <a
-                  href="#"
+                  href="https://www.google.com/maps/search/?api=1&query=A-69+Arya+Nagar+Apartment%2C+IP+Extension%2C+Delhi-110092"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#7C4DFF] transition-colors hover:text-[#5D35D5]"
                 >
                   Find Test Centres
@@ -145,7 +192,7 @@ function ContactUs() {
                   and other queries.
                 </p>
 
-               
+
 
               </div>
 
@@ -167,28 +214,5 @@ function ContactUs() {
 }
 
 
-/* ================= CONTACT ITEM ================= */
-
-function ContactItem({ icon: Icon, title, text }) {
-  return (
-    <div className="flex items-center gap-4">
-
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
-        <Icon size={19} />
-      </div>
-
-      <div>
-        <p className="text-xs font-bold uppercase tracking-wider text-white/40">
-          {title}
-        </p>
-
-        <p className="mt-1 text-sm font-medium text-white/80">
-          {text}
-        </p>
-      </div>
-
-    </div>
-  );
-}
 
 export default ContactUs;

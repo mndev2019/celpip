@@ -3,8 +3,10 @@ import React from "react";
 import { FiArrowRight, FiCheckCircle, FiPlay } from "react-icons/fi";
 
 import banner from "../../../assets/Image/banner.jfif";
+import { useNavigate } from "react-router-dom";
 
 function Banner() {
+  const navigate = useNavigate();
   return (
     <section className="relative w-full overflow-hidden bg-[#F7F4FF]">
 
@@ -51,6 +53,7 @@ function Banner() {
 
               {/* Primary */}
               <button
+                onClick={() => navigate('/contact')}
                 className="
                   group
                   inline-flex
@@ -70,7 +73,7 @@ function Banner() {
                   shadow-purple-200
                 "
               >
-                Start Preparing
+                Contact Us
 
                 <FiArrowRight
                   size={19}
@@ -78,30 +81,7 @@ function Banner() {
                 />
               </button>
 
-              {/* Secondary */}
-              <button
-                className="
-                  inline-flex
-                  items-center
-                  justify-center
-                  gap-2
-                  bg-white
-                  border
-                  border-[#DED4F7]
-                  text-[#5B438E]
-                  hover:border-[#7C4DFF]
-                  hover:text-[#7C4DFF]
-                  font-semibold
-                  px-7
-                  py-3.5
-                  rounded-xl
-                  transition-all
-                  duration-300
-                "
-              >
-                <FiPlay size={17} />
-                Explore Practice
-              </button>
+
 
             </div>
 

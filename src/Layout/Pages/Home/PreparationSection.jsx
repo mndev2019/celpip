@@ -29,7 +29,7 @@ function PreparationSection() {
       tag: "EXPERT GUIDANCE",
       title: "Get Help From Experts",
       description:
-        "Learn directly from experienced instructors through expert-led webinars covering each CELPIP component, with useful tips, strategies, and live Q&A.",
+        "Learn directly from experienced instructors through expert-led webinars with useful tips, strategies, and live Q&A.",
       button: "Contact Us",
       image: expertImg,
       icon: FiCheckCircle,
