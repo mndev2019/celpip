@@ -41,7 +41,7 @@ function WhyChooseSection() {
   return (
     <section className="bg-[#FFF9F4] py-24 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute -top-20 right-0 w-80 h-80 bg-[#FFE0C2] rounded-full blur-3xl"></div>
+      <div className="absolute -top-20 right-0 w-80 h-80 bg-[#FFE0C2] rounded-full blur-3xl md:block hidden"></div>
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#FFE0C2] rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
