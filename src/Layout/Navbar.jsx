@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#EEE8FF]">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#FFE2CF]">
       <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10">
         <div className="flex items-center justify-between h-[80px]">
 
@@ -41,8 +41,8 @@ function Navbar() {
               className={({ isActive }) =>
                 `relative py-2 font-medium transition-colors ${
                   isActive
-                    ? "text-[#34205F] font-bold"
-                    : "text-[#6F6680] hover:text-[#7C4DFF]"
+                    ? "text-[#B84B00] font-bold"
+                    : "text-[#6F6680] hover:text-[#fd6902]"
                 }`
               }
             >
@@ -50,7 +50,7 @@ function Navbar() {
                 <>
                   Home
                   {isActive && (
-                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#fd6902]" />
                   )}
                 </>
               )}
@@ -62,8 +62,8 @@ function Navbar() {
               className={({ isActive }) =>
                 `relative py-2 font-medium transition-colors ${
                   isActive
-                    ? "text-[#34205F] font-bold"
-                    : "text-[#6F6680] hover:text-[#7C4DFF]"
+                    ? "text-[#B84B00] font-bold"
+                    : "text-[#6F6680] hover:text-[#fd6902]"
                 }`
               }
             >
@@ -71,7 +71,7 @@ function Navbar() {
                 <>
                   About
                   {isActive && (
-                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#fd6902]" />
                   )}
                 </>
               )}
@@ -89,8 +89,8 @@ function Navbar() {
                   transition-colors
                   ${
                     immigrationOpen
-                      ? "text-[#34205F] font-bold"
-                      : "text-[#6F6680] hover:text-[#7C4DFF]"
+                      ? "text-[#B84B00] font-bold"
+                      : "text-[#6F6680] hover:text-[#fd6902]"
                   }
                 `}
               >
@@ -114,10 +114,10 @@ function Navbar() {
                     mt-3
                     w-64
                     rounded-2xl
-                    border border-[#E8E0F5]
+                    border border-[#FFE0CC]
                     bg-white
                     p-2
-                    shadow-[0_15px_45px_rgba(88,61,145,0.12)]
+                    shadow-[0_15px_45px_rgba(253,105,2,0.12)]
                   "
                 >
 
@@ -132,8 +132,8 @@ function Navbar() {
                       text-sm
                       font-semibold
                       text-[#514A63]
-                      hover:bg-[#F7F4FF]
-                      hover:text-[#7C4DFF]
+                      hover:bg-[#FFF3EA]
+                      hover:text-[#fd6902]
                       transition
                     "
                   >
@@ -151,8 +151,8 @@ function Navbar() {
                       text-sm
                       font-semibold
                       text-[#514A63]
-                      hover:bg-[#F7F4FF]
-                      hover:text-[#7C4DFF]
+                      hover:bg-[#FFF3EA]
+                      hover:text-[#fd6902]
                       transition
                     "
                   >
@@ -170,8 +170,8 @@ function Navbar() {
                       text-sm
                       font-semibold
                       text-[#514A63]
-                      hover:bg-[#F7F4FF]
-                      hover:text-[#7C4DFF]
+                      hover:bg-[#FFF3EA]
+                      hover:text-[#fd6902]
                       transition
                     "
                   >
@@ -188,8 +188,8 @@ function Navbar() {
               className={({ isActive }) =>
                 `relative py-2 font-medium transition-colors ${
                   isActive
-                    ? "text-[#34205F] font-bold"
-                    : "text-[#6F6680] hover:text-[#7C4DFF]"
+                    ? "text-[#B84B00] font-bold"
+                    : "text-[#6F6680] hover:text-[#fd6902]"
                 }`
               }
             >
@@ -197,7 +197,7 @@ function Navbar() {
                 <>
                   Contact
                   {isActive && (
-                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#7C4DFF]" />
+                    <span className="absolute left-0 bottom-0 w-full h-0.5 bg-[#fd6902]" />
                   )}
                 </>
               )}
@@ -211,11 +211,11 @@ function Navbar() {
               md:hidden
               w-11 h-11
               rounded-xl
-              bg-[#F7F4FF]
-              text-[#6841D8]
+              bg-[#FFF3EA]
+              text-[#fd6902]
               flex items-center justify-center
               text-2xl
-              hover:bg-[#EEE8FF]
+              hover:bg-[#FFE5D4]
               transition
             "
             onClick={() => setIsOpen(!isOpen)}
@@ -233,7 +233,7 @@ function Navbar() {
           md:hidden
           overflow-hidden
           bg-white
-          border-t border-[#EEE8FF]
+          border-t border-[#FFE2CF]
           transition-all duration-300
           ${isOpen ? "max-h-[700px] opacity-100" : "max-h-0 opacity-0"}
         `}
@@ -246,8 +246,8 @@ function Navbar() {
             className="
               px-4 py-3
               rounded-xl
-              bg-[#F7F4FF]
-              text-[#6841D8]
+              bg-[#FFF3EA]
+              text-[#fd6902]
               font-semibold
             "
             onClick={closeMobileMenu}
@@ -262,8 +262,8 @@ function Navbar() {
               px-4 py-3
               rounded-xl
               text-[#6F6680]
-              hover:bg-[#F7F4FF]
-              hover:text-[#6841D8]
+              hover:bg-[#FFF3EA]
+              hover:text-[#fd6902]
               transition
             "
             onClick={closeMobileMenu}
@@ -282,8 +282,8 @@ function Navbar() {
                 px-4 py-3
                 rounded-xl
                 text-[#6F6680]
-                hover:bg-[#F7F4FF]
-                hover:text-[#6841D8]
+                hover:bg-[#FFF3EA]
+                hover:text-[#fd6902]
                 transition
                 font-semibold
               "
@@ -300,7 +300,7 @@ function Navbar() {
 
             {/* MOBILE SUBMENU */}
             {immigrationOpen && (
-              <div className="mt-1 ml-3 pl-3 border-l-2 border-[#E8E0F5] space-y-1">
+              <div className="mt-1 ml-3 pl-3 border-l-2 border-[#FFE0CC] space-y-1">
 
                 <Link
                   to="/canadian-residency"
@@ -311,8 +311,8 @@ function Navbar() {
                     rounded-xl
                     text-sm
                     text-[#6F6680]
-                    hover:bg-[#F7F4FF]
-                    hover:text-[#6841D8]
+                    hover:bg-[#FFF3EA]
+                    hover:text-[#fd6902]
                     transition
                   "
                 >
@@ -328,8 +328,8 @@ function Navbar() {
                     rounded-xl
                     text-sm
                     text-[#6F6680]
-                    hover:bg-[#F7F4FF]
-                    hover:text-[#6841D8]
+                    hover:bg-[#FFF3EA]
+                    hover:text-[#fd6902]
                     transition
                   "
                 >
@@ -345,8 +345,8 @@ function Navbar() {
                     rounded-xl
                     text-sm
                     text-[#6F6680]
-                    hover:bg-[#F7F4FF]
-                    hover:text-[#6841D8]
+                    hover:bg-[#FFF3EA]
+                    hover:text-[#fd6902]
                     transition
                   "
                 >
@@ -365,8 +365,8 @@ function Navbar() {
               px-4 py-3
               rounded-xl
               text-[#6F6680]
-              hover:bg-[#F7F4FF]
-              hover:text-[#6841D8]
+              hover:bg-[#FFF3EA]
+              hover:text-[#fd6902]
               transition
             "
             onClick={closeMobileMenu}
@@ -381,10 +381,10 @@ function Navbar() {
               className="
                 py-3
                 rounded-xl
-                border border-[#DDD3F2]
-                text-[#6841D8]
+                border border-[#FFD8C2]
+                text-[#fd6902]
                 font-semibold
-                hover:bg-[#F7F4FF]
+                hover:bg-[#FFF3EA]
                 transition
               "
             >
@@ -395,8 +395,8 @@ function Navbar() {
               className="
                 py-3
                 rounded-xl
-                bg-[#FF8066]
-                hover:bg-[#F06E54]
+                bg-[#fd6902]
+                hover:bg-[#E85D00]
                 text-white
                 font-semibold
                 transition
@@ -415,3 +415,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

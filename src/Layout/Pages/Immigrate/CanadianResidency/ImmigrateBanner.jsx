@@ -3,7 +3,8 @@ import { FiArrowRight } from "react-icons/fi";
 import { useNavigate } from "react-router-dom";
 
 function ImmigrateBanner(props) {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+
   return (
     <section className="relative w-full min-h-[520px] md:min-h-[600px] lg:min-h-[650px] overflow-hidden">
 
@@ -15,10 +16,10 @@ function ImmigrateBanner(props) {
       />
 
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#100C2B]/95 via-[#18133B]/75 to-[#18133B]/20" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#1F120A]/95 via-[#351806]/75 to-[#351806]/20" />
 
-      {/* Purple Glow */}
-      <div className="absolute -top-32 -left-20 w-80 h-80 bg-[#7C3AED]/25 rounded-full blur-3xl" />
+      {/* Orange Glow */}
+      <div className="absolute -top-32 -left-20 w-80 h-80 bg-[#fd6902]/25 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 min-h-[520px] md:min-h-[600px] lg:min-h-[650px] flex items-center">
 
@@ -26,27 +27,24 @@ function ImmigrateBanner(props) {
 
           {/* Small Accent */}
           <div className="flex items-center gap-2 mb-6">
-            <span className="w-16 h-1 rounded-full bg-[#8B5CF6]" />
-            <span className="w-8 h-1 rounded-full bg-[#FF6B4A]" />
+            <span className="w-16 h-1 rounded-full bg-[#fd6902]" />
+            <span className="w-8 h-1 rounded-full bg-[#FF9A5C]" />
           </div>
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold leading-[1.08] text-white">
-{props.title}
-        
+            {props.title}
 
-            <span className="block mt-2 bg-gradient-to-r from-[#A78BFA] via-[#C084FC] to-[#FF8066] bg-clip-text text-transparent">
+            <span className="block mt-2 bg-gradient-to-r from-[#FFB27D] via-[#FF9A5C] to-[#fd6902] bg-clip-text text-transparent">
               {props.subtitle}
-          
             </span>
-
           </h1>
 
           {/* Contact Button */}
           <div className="mt-9">
 
             <button
-            onClick={()=> navigate('/contact')}
+              onClick={() => navigate("/contact")}
               className="
                 group
                 inline-flex
@@ -55,14 +53,14 @@ function ImmigrateBanner(props) {
                 px-8
                 py-4
                 rounded-full
-                bg-[#FF6B4A]
-                hover:bg-[#FF5633]
+                bg-[#fd6902]
+                hover:bg-[#E85D00]
                 text-white
                 text-base
                 md:text-lg
                 font-semibold
-                shadow-[0_15px_40px_rgba(255,107,74,0.35)]
-                hover:shadow-[0_18px_45px_rgba(255,107,74,0.5)]
+                shadow-[0_15px_40px_rgba(253,105,2,0.35)]
+                hover:shadow-[0_18px_45px_rgba(253,105,2,0.5)]
                 hover:-translate-y-1
                 transition-all
                 duration-300
@@ -83,7 +81,7 @@ function ImmigrateBanner(props) {
       </div>
 
       {/* Bottom Curve */}
-      <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#F4F1FF] to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-[#FFF9F5] to-transparent" />
 
     </section>
   );

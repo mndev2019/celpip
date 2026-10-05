@@ -49,7 +49,7 @@ function EnquiryForm() {
   };
 
   return (
-    <div className="relative overflow-hidden rounded-[30px] border border-[#E7E0F8] bg-white p-6 shadow-[0_20px_60px_rgba(88,61,145,0.10)] sm:p-8 lg:p-10">
+    <div className="relative overflow-hidden rounded-[30px] border border-[#f7e0ce] bg-white p-6 shadow-[0_20px_60px_rgba(88,61,145,0.10)] sm:p-8 lg:p-10">
 
       {/* Background decoration */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-48 w-48 rounded-full bg-[#EEE8FF] blur-3xl" />
@@ -58,7 +58,7 @@ function EnquiryForm() {
 
         {/* Heading */}
         <div className="mb-8">
-          <span className="text-xs font-extrabold tracking-[0.18em] text-[#7C4DFF]">
+          <span className="text-xs font-extrabold tracking-[0.18em] text-[#fd6902]">
             SEND AN ENQUIRY
           </span>
 
@@ -155,14 +155,21 @@ function EnquiryForm() {
               required
               rows="5"
               placeholder="Write your message here..."
-              className="w-full resize-none rounded-2xl border border-[#E4DCF4] bg-[#FCFBFF] px-4 py-3.5 text-sm text-[#211A3A] outline-none transition-all placeholder:text-[#AAA3BA] focus:border-[#7C4DFF] focus:bg-white focus:ring-4 focus:ring-[#7C4DFF]/10"
+              className="w-full resize-none rounded-2xl border border-[#E4DCF4] bg-[#FCFBFF] px-4 py-3.5 text-sm text-[#211A3A] outline-none transition-all placeholder:text-[#AAA3BA] focus:border-[#fd6902] focus:bg-white focus:ring-4 focus:ring-[#7C4DFF]/10"
             />
           </div>
 
           {/* Button */}
           <button
             type="submit"
-            className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl bg-gradient-to-r from-[#7C4DFF] to-[#9D6CFF] px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#7C4DFF]/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#7C4DFF]/30"
+            className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl   bg-gradient-to-r
+                  from-[#FF3D00]
+                  via-[#FF6500]
+                  to-[#FF9D00]
+                  hover:from-[#E93600]
+                  hover:via-[#F45700]
+                  hover:to-[#F28A00]
+                  text-white px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#7C4DFF]/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#7C4DFF]/30"
           >
             Send Enquiry
 
@@ -204,7 +211,7 @@ function FormInput({
       <div className="relative">
         <Icon
           size={18}
-          className="absolute left-4 top-1/2 -translate-y-1/2 text-[#9A82D8]"
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-[#fd6902]"
         />
 
         <input
@@ -214,7 +221,7 @@ function FormInput({
           onChange={onChange}
           placeholder={placeholder}
           required={required}
-          className="w-full rounded-2xl border border-[#E4DCF4] bg-[#FCFBFF] py-3.5 pl-11 pr-4 text-sm text-[#211A3A] outline-none transition-all placeholder:text-[#AAA3BA] focus:border-[#7C4DFF] focus:bg-white focus:ring-4 focus:ring-[#7C4DFF]/10"
+          className="w-full rounded-2xl border border-[#E4DCF4] bg-[#FCFBFF] py-3.5 pl-11 pr-4 text-sm text-[#211A3A] outline-none transition-all placeholder:text-[#AAA3BA] focus:border-[#fd6902] focus:bg-white focus:ring-4 focus:ring-[#7C4DFF]/10"
         />
       </div>
     </div>

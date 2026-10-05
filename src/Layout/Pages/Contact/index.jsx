@@ -15,28 +15,28 @@ import EnquiryForm from "./EnquiryForm";
 function ContactUs() {
 
   return (
-    <main className="min-h-screen bg-[#FAF8FF]">
+    <main className="min-h-screen bg-[#FFF9F4]">
 
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden bg-[#FAF8FF] pb-16 pt-16 sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
+      <section className="relative overflow-hidden bg-[#FFF9F4] pb-16 pt-16 sm:pb-20 sm:pt-20 lg:pb-24 lg:pt-24">
 
         {/* Decorations */}
-        <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-[#E7DBFF] opacity-60 blur-3xl" />
+        <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-[#FFD6C7] opacity-60 blur-3xl" />
 
-        <div className="pointer-events-none absolute -right-32 top-32 h-96 w-96 rounded-full bg-[#E9DFFF] opacity-50 blur-3xl" />
+        <div className="pointer-events-none absolute -right-32 top-32 h-96 w-96 rounded-full bg-[#FFD6C7] opacity-50 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
           <div className="mx-auto max-w-3xl text-center">
 
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#DDD2FF] bg-white px-4 py-2 text-xs font-extrabold tracking-[0.16em] text-[#7C4DFF] shadow-sm">
-              <span className="h-2 w-2 rounded-full bg-[#7C4DFF]" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#f8d7c0] bg-white px-4 py-2 text-xs font-extrabold tracking-[0.16em] text-[#fd6902] shadow-sm">
+              <span className="h-2 w-2 rounded-full bg-[#fd6902]" />
               CONTACT US
             </span>
 
             <h1 className="mt-5 text-4xl font-extrabold leading-tight text-[#211A3A] sm:text-5xl lg:text-6xl">
               Let’s start a
-              <span className="block bg-gradient-to-r from-[#7C4DFF] to-[#A66CFF] bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-[#E85D00] to-[#FF8A3D] bg-clip-text text-transparent">
                 conversation.
               </span>
             </h1>
@@ -65,7 +65,7 @@ function ContactUs() {
               {/* Contact Info Card */}
               <div className="rounded-[30px] bg-[#211A3A] p-7 text-white shadow-[0_20px_60px_rgba(33,26,58,0.18)] sm:p-8">
 
-                <span className="text-xs font-extrabold tracking-[0.18em] text-[#B99AFF]">
+                <span className="text-xs font-extrabold tracking-[0.18em] text-[#fd6902]">
                   GET IN TOUCH
                 </span>
 
@@ -81,7 +81,7 @@ function ContactUs() {
                 <div className="mt-8 space-y-5">
                   <div className="flex items-center gap-4">
 
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#fd6902]">
                       <FiMail size={19} />
                     </div>
 
@@ -101,7 +101,7 @@ function ContactUs() {
                   </div>
                   <div className="flex items-center gap-4">
 
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#fd6902]">
                       <FiPhone size={19} />
                     </div>
 
@@ -121,7 +121,7 @@ function ContactUs() {
                   </div>
                   <div className="flex items-center gap-4">
 
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#B99AFF]">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#fd6902]">
                       <FiMapPin size={19} />
                     </div>
 
@@ -148,9 +148,9 @@ function ContactUs() {
 
 
               {/* Test Centre Card */}
-              <div className="rounded-[30px] border border-[#E5DDF3] bg-white p-7 shadow-[0_15px_50px_rgba(88,61,145,0.07)] sm:p-8">
+              <div className="rounded-[30px] border border-[#f7e0ce] bg-white p-7 shadow-[0_15px_50px_rgba(88,61,145,0.07)] sm:p-8">
 
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EEE8FF] text-[#7C4DFF]">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#FFF9F4] text-[#fd6902]">
                   <FiMapPin size={22} />
                 </div>
 
@@ -167,7 +167,7 @@ function ContactUs() {
                   href="https://www.google.com/maps/search/?api=1&query=A-69+Arya+Nagar+Apartment%2C+IP+Extension%2C+Delhi-110092"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#7C4DFF] transition-colors hover:text-[#5D35D5]"
+                  className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#fd6902] transition-colors hover:text-[#a54b0a]"
                 >
                   Find Test Centres
                   <FiArrowRight size={16} />
@@ -177,9 +177,9 @@ function ContactUs() {
 
 
               {/* Support Card */}
-              <div className="rounded-[30px] border border-[#E5DDF3] bg-gradient-to-br from-[#F2ECFF] to-white p-7 sm:p-8">
+              <div className="rounded-[30px] border border-[#f7e0ce] bg-gradient-to-br from-[#f0d9c7] to-white p-7 sm:p-8">
 
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#7C4DFF] shadow-sm">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white text-[#fd6902] shadow-sm">
                   <FiHeadphones size={22} />
                 </div>
 

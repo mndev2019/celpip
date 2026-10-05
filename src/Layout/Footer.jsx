@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   FiArrowUpRight,
@@ -33,66 +34,70 @@ function Footer() {
   ];
 
   return (
-    <footer className="relative overflow-hidden bg-[#211A3A] text-white">
+    <footer className="relative overflow-hidden bg-[#21150F] text-white pt-10">
 
       {/* ================= DECORATIVE BACKGROUND ================= */}
 
-      <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#7C4DFF]/20 blur-3xl" />
+      <div className="pointer-events-none absolute -left-40 top-20 h-80 w-80 rounded-full bg-[#fd6902]/20 blur-3xl" />
 
-      <div className="pointer-events-none absolute -right-40 bottom-10 h-96 w-96 rounded-full bg-[#A66CFF]/15 blur-3xl" />
+      <div className="pointer-events-none absolute -right-40 bottom-10 h-96 w-96 rounded-full bg-[#FF9A5C]/15 blur-3xl" />
 
-      <div className="pointer-events-none absolute right-[30%] top-0 h-40 w-40 rounded-full bg-[#C5A7FF]/10 blur-3xl" />
+      <div className="pointer-events-none absolute right-[30%] top-0 h-40 w-40 rounded-full bg-[#FFB27D]/10 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         {/* ================= TOP CTA ================= */}
 
-        <div className="border-b border-white/10 py-14 sm:py-16 lg:py-20">
 
-          <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-br from-[#7C4DFF] to-[#9B6CFF] px-6 py-10 shadow-2xl shadow-black/20 sm:px-10 lg:px-14 lg:py-12">
+        <div className="relative overflow-hidden rounded-[30px] bg-gradient-to-br from-[#2A1A12] via-[#321B0F] to-[#40200F] px-6 py-10 shadow-2xl shadow-black/20 sm:px-10 lg:px-14 lg:py-12">
 
-            {/* CTA Decorations */}
+          {/* CTA Orange Glow */}
+          <div className="absolute -right-20 -top-24 h-64 w-64 rounded-full bg-[#fd6902]/20 blur-3xl" />
 
-            <div className="absolute -right-12 -top-16 h-48 w-48 rounded-full border-[30px] border-white/10" />
+          <div className="absolute -left-16 -bottom-20 h-52 w-52 rounded-full bg-[#FF8A3D]/10 blur-3xl" />
 
-            <div className="absolute -bottom-20 right-28 h-40 w-40 rounded-full border-[20px] border-white/10" />
+          {/* CTA Decorations */}
+          <div className="absolute -right-12 -top-16 h-48 w-48 rounded-full border-[30px] border-[#fd6902]/10" />
 
-            <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+          <div className="absolute -bottom-20 right-28 h-40 w-40 rounded-full border-[20px] border-[#FF8A3D]/10" />
 
-              <div className="max-w-2xl">
+          <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
-                <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-bold tracking-[0.15em] text-white">
-                  READY TO GET STARTED?
+            <div className="max-w-2xl">
+
+              <span className="inline-flex rounded-full border border-[#fd6902]/30 bg-[#fd6902]/10 px-4 py-2 text-xs font-bold tracking-[0.15em] text-[#FF9A5C]">
+                READY TO GET STARTED?
+              </span>
+
+              <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl">
+                Your journey
+                <span className="block text-white/80">
+                  starts here.
                 </span>
+              </h2>
 
-                <h2 className="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl">
-                  Your journey
-                  <span className="block text-white/80">
-                    starts here.
-                  </span>
-                </h2>
-
-                <p className="mt-4 max-w-xl text-sm leading-6 text-white/80 sm:text-base">
-                  Explore our immigration services and get the guidance you
-                  need to take your next step with confidence.
-                </p>
-
-              </div>
-
-              <Link
-                to="/contact"
-                className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-white px-6 py-3.5 text-sm font-bold text-[#6D3FE8] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                Contact Us
-
-                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#EEE8FF] transition-transform duration-300 group-hover:rotate-45">
-                  <FiArrowUpRight size={17} />
-                </span>
-              </Link>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-white/65 sm:text-base">
+                Explore our immigration services and get the guidance you
+                need to take your next step with confidence.
+              </p>
 
             </div>
+
+            <Link
+              to="/contact"
+              className="group inline-flex w-fit shrink-0 items-center gap-3 rounded-full bg-[#fd6902] px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-[#fd6902]/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#E85D00] hover:shadow-xl"
+            >
+              Contact Us
+
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 transition-transform duration-300 group-hover:rotate-45">
+                <FiArrowUpRight size={17} />
+              </span>
+            </Link>
+
           </div>
         </div>
+
+
 
         {/* ================= MAIN FOOTER ================= */}
 
@@ -167,8 +172,8 @@ function Footer() {
                     text-white/60
                     transition-all duration-300
                     hover:-translate-y-1
-                    hover:border-[#9B6CFF]
-                    hover:bg-[#7C4DFF]
+                    hover:border-[#FF8A3D]
+                    hover:bg-[#fd6902]
                     hover:text-white
                   "
                 >
@@ -204,7 +209,7 @@ function Footer() {
                 href="tel:+918447733777"
                 className="flex items-start gap-3 text-sm text-white/55 transition-colors hover:text-white"
               >
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#A66CFF]">
+                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#FF9A5C]">
                   <FiPhone size={16} />
                 </span>
 
@@ -225,7 +230,7 @@ function Footer() {
                 href="mailto:Madirana2005@gmail.com"
                 className="flex items-start gap-3 text-sm text-white/55 transition-colors hover:text-white"
               >
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#A66CFF]">
+                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#FF9A5C]">
                   <FiMail size={16} />
                 </span>
 
@@ -244,7 +249,7 @@ function Footer() {
 
               <div className="flex items-start gap-3 text-sm text-white/55">
 
-                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#A66CFF]">
+                <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 text-[#FF9A5C]">
                   <FiMapPin size={16} />
                 </span>
 
@@ -274,8 +279,6 @@ function Footer() {
           <p>
             © {new Date().getFullYear()} Madhav IT Services. All rights reserved.
           </p>
-
-
 
         </div>
 
@@ -342,3 +345,4 @@ function FooterColumn({ title, links }) {
 }
 
 export default Footer;
+

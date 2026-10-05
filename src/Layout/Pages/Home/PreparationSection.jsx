@@ -51,27 +51,27 @@ function PreparationSection() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-[#FAF8FF] py-20 sm:py-24 lg:py-28">
+    <section className="relative overflow-hidden bg-[#FFF9F4] py-20 sm:py-24 lg:py-28">
       
       {/* Background Decorations */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-[#E9DEFF] opacity-50 blur-3xl" />
+      <div className="pointer-events-none absolute -left-32 top-20 h-72 w-72 rounded-full bg-[#FF8A00]/10 opacity-50 blur-3xl" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-[#E5D9FF] opacity-50 blur-3xl" />
+      <div className="pointer-events-none absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-[#FF8A00]/10 opacity-50 blur-3xl" />
 
-      <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-32 -translate-x-1/2 rounded-full bg-[#F0E9FF] blur-2xl" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-32 w-32 -translate-x-1/2 rounded-full bg-[#FF8A00]/10 blur-2xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
 
         {/* Section Heading */}
         <div className="mx-auto mb-14 max-w-3xl text-center lg:mb-16">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#DDD2FF] bg-white px-4 py-2 text-xs font-bold tracking-[0.16em] text-[#7C4DFF] shadow-sm">
-            <span className="h-2 w-2 rounded-full bg-[#7C4DFF]" />
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#ebcdb7] bg-white px-4 py-2 text-xs font-bold tracking-[0.16em] text-[#F56700] shadow-sm">
+            <span className="h-2 w-2 rounded-full bg-[#F56700]" />
             WAYS TO PREPARE
           </div>
 
           <h2 className="text-3xl font-extrabold leading-tight text-[#211A3A] sm:text-4xl lg:text-5xl">
             Prepare Your Way.
-            <span className="block bg-gradient-to-r from-[#7C4DFF] to-[#A66CFF] bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-[#E85D00] to-[#FF8A3D] bg-clip-text text-transparent">
               Perform With Confidence.
             </span>
           </h2>
@@ -102,7 +102,7 @@ function PreparationSection() {
                 <div className="relative h-[245px] overflow-hidden bg-gradient-to-br from-[#F3EEFF] to-[#E9DEFF]">
 
                   {/* Number */}
-                  <div className="absolute left-5 top-5 z-20 flex h-11 w-11 items-center justify-center rounded-2xl border border-white/70 bg-white/90 text-sm font-extrabold text-[#7C4DFF] shadow-sm backdrop-blur">
+                  <div className="absolute left-5 top-5 z-20 flex h-11 w-11 items-center justify-center rounded-2xl border border-white/70 bg-white/90 text-sm font-extrabold text-[#F56700] shadow-sm backdrop-blur">
                     {item.number}
                   </div>
 
@@ -128,7 +128,7 @@ function PreparationSection() {
                 <div className="p-7 sm:p-8">
 
                   {/* Tag */}
-                  <span className="text-[11px] font-extrabold tracking-[0.18em] text-[#9A82D8]">
+                  <span className="text-[11px] font-extrabold tracking-[0.18em] text-[#F56700]">
                     {item.tag}
                   </span>
 
@@ -145,7 +145,7 @@ function PreparationSection() {
                   {/* Button */}
                   <button
                     type="button"
-                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#211A3A] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#7C4DFF] hover:shadow-lg hover:shadow-[#7C4DFF]/25"
+                    className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#211A3A] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#F56700] hover:shadow-lg hover:shadow-[#7C4DFF]/25"
                   >
                     {item.button}
 
@@ -157,7 +157,7 @@ function PreparationSection() {
                 </div>
 
                 {/* Bottom Accent */}
-                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#7C4DFF] to-[#B98AFF] transition-all duration-500 group-hover:w-full" />
+                <div className="absolute bottom-0 left-0 h-1 w-0 bg-gradient-to-r from-[#E85D00] to-[#FF8A3D] transition-all duration-500 group-hover:w-full" />
               </article>
             );
           })}
@@ -167,7 +167,7 @@ function PreparationSection() {
         <div className="mt-14 flex justify-center lg:mt-20">
           <div className="flex max-w-xl items-center gap-3 rounded-2xl border border-[#E4DBF7] bg-white/80 px-5 py-4 text-center shadow-sm backdrop-blur sm:px-7">
             <FiCheckCircle
-              className="shrink-0 text-[#7C4DFF]"
+              className="shrink-0 text-[#fd6902]"
               size={21}
             />
 

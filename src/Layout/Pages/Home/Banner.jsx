@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FiArrowRight, FiCheckCircle, FiPlay } from "react-icons/fi";
 
@@ -7,15 +6,16 @@ import { useNavigate } from "react-router-dom";
 
 function Banner() {
   const navigate = useNavigate();
+
   return (
-    <section className="relative w-full overflow-hidden bg-[#F7F4FF]">
+    <section className="relative w-full overflow-hidden bg-[#FFF9F4]">
 
       {/* Decorative Background */}
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#D9CCFF] rounded-full blur-3xl opacity-60"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-[#FFE0C2] rounded-full blur-3xl opacity-60"></div>
 
-      <div className="absolute top-20 right-0 w-80 h-80 bg-[#FFE0D5] rounded-full blur-3xl opacity-50"></div>
+      <div className="absolute top-20 right-0 w-80 h-80 bg-[#FFD6C7] rounded-full blur-3xl opacity-50"></div>
 
-      <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-[#E9DFFF] rounded-full blur-3xl opacity-50"></div>
+      <div className="absolute bottom-0 left-1/3 w-72 h-72 bg-[#FFE8D5] rounded-full blur-3xl opacity-50"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-10 py-14 md:py-20 lg:py-24">
 
@@ -25,7 +25,7 @@ function Banner() {
           <div className="max-w-2xl">
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white border border-[#E4DAFF] text-[#6841D8] px-4 py-2 rounded-full text-sm font-semibold shadow-sm mb-6">
+            <div className="inline-flex items-center gap-2 bg-white border border-[#FFDCC7] text-[#E85D04] px-4 py-2 rounded-full text-sm font-semibold shadow-sm mb-6">
               <FiCheckCircle size={16} />
               Your English Journey Starts Here
             </div>
@@ -35,7 +35,7 @@ function Banner() {
 
               Learn English.
 
-              <span className="block text-[#7C4DFF] mt-2">
+              <span className="block text-[#F56700] mt-2">
                 Achieve More.
               </span>
 
@@ -53,15 +53,20 @@ function Banner() {
 
               {/* Primary */}
               <button
-                onClick={() => navigate('/contact')}
+                onClick={() => navigate("/contact")}
                 className="
                   group
                   inline-flex
                   items-center
                   justify-center
                   gap-2
-                  bg-[#7C4DFF]
-                  hover:bg-[#6938E8]
+                  bg-gradient-to-r
+                  from-[#FF3D00]
+                  via-[#FF6500]
+                  to-[#FF9D00]
+                  hover:from-[#E93600]
+                  hover:via-[#F45700]
+                  hover:to-[#F28A00]
                   text-white
                   font-semibold
                   px-7
@@ -70,7 +75,7 @@ function Banner() {
                   transition-all
                   duration-300
                   shadow-lg
-                  shadow-purple-200
+                  shadow-orange-200
                 "
               >
                 Contact Us
@@ -80,8 +85,6 @@ function Banner() {
                   className="group-hover:translate-x-1 transition-transform"
                 />
               </button>
-
-
 
             </div>
 
@@ -98,7 +101,7 @@ function Banner() {
                 </p>
               </div>
 
-              <div className="h-12 w-px bg-[#DDD3F2]"></div>
+              <div className="h-12 w-px bg-[#F2CDB7]"></div>
 
               <div className="px-6">
                 <h3 className="text-2xl sm:text-3xl font-bold text-[#34205F]">
@@ -110,7 +113,7 @@ function Banner() {
                 </p>
               </div>
 
-              <div className="h-12 w-px bg-[#DDD3F2]"></div>
+              <div className="h-12 w-px bg-[#F2CDB7]"></div>
 
               <div className="pl-6">
                 <h3 className="text-2xl sm:text-3xl font-bold text-[#34205F]">
@@ -130,45 +133,52 @@ function Banner() {
           <div className="relative flex justify-center lg:justify-end">
 
             {/* Main Circle */}
-            <div className="
-              absolute
-              w-[280px]
-              h-[280px]
-              sm:w-[380px]
-              sm:h-[380px]
-              lg:w-[470px]
-              lg:h-[470px]
-              rounded-full
-              bg-gradient-to-br
-              from-[#D8C9FF]
-              to-[#F7D8FF]
-            "></div>
+            <div
+              className="
+                absolute
+                w-[280px]
+                h-[280px]
+                sm:w-[380px]
+                sm:h-[380px]
+                lg:w-[470px]
+                lg:h-[470px]
+                rounded-full
+                bg-gradient-to-br
+                from-[#FFD2A6]
+                via-[#FFB066]
+                to-[#FFE1C2]
+              "
+            ></div>
 
             {/* Decorative Ring */}
-            <div className="
-              absolute
-              w-[310px]
-              h-[310px]
-              sm:w-[410px]
-              sm:h-[410px]
-              lg:w-[500px]
-              lg:h-[500px]
-              rounded-full
-              border
-              border-[#BFA9F5]
-              opacity-60
-            "></div>
+            <div
+              className="
+                absolute
+                w-[310px]
+                h-[310px]
+                sm:w-[410px]
+                sm:h-[410px]
+                lg:w-[500px]
+                lg:h-[500px]
+                rounded-full
+                border
+                border-[#F4A261]
+                opacity-60
+              "
+            ></div>
 
             {/* Image */}
-            <div className="
-              relative
-              z-10
-              bg-white
-              p-3
-              sm:p-4
-              rounded-[2rem]
-              shadow-[0_25px_70px_rgba(91,67,142,0.18)]
-            ">
+            <div
+              className="
+                relative
+                z-10
+                bg-white
+                p-3
+                sm:p-4
+                rounded-[2rem]
+                shadow-[0_25px_70px_rgba(230,100,20,0.18)]
+              "
+            >
               <img
                 src={banner}
                 alt="English test preparation"
@@ -184,33 +194,37 @@ function Banner() {
             </div>
 
             {/* Top Floating Card */}
-            <div className="
-              absolute
-              z-20
-              -top-5
-              left-0
-              sm:left-2
-              bg-white
-              rounded-2xl
-              px-4
-              py-3
-              shadow-xl
-              border
-              border-[#EEE8FF]
-            ">
+            <div
+              className="
+                absolute
+                z-20
+                -top-5
+                left-0
+                sm:left-2
+                bg-white
+                rounded-2xl
+                px-4
+                py-3
+                shadow-xl
+                border
+                border-[#FFE1D1]
+              "
+            >
 
               <div className="flex items-center gap-3">
 
-                <div className="
-                  w-10
-                  h-10
-                  rounded-xl
-                  bg-[#EEE8FF]
-                  flex
-                  items-center
-                  justify-center
-                  text-[#7C4DFF]
-                ">
+                <div
+                  className="
+                    w-10
+                    h-10
+                    rounded-xl
+                    bg-[#FFF0E6]
+                    flex
+                    items-center
+                    justify-center
+                    text-[#F56700]
+                  "
+                >
                   <FiCheckCircle size={20} />
                 </div>
 
@@ -229,19 +243,23 @@ function Banner() {
             </div>
 
             {/* Bottom Floating Card */}
-            <div className="
-              absolute
-              z-20
-              -bottom-5
-              right-0
-              sm:right-5
-              bg-[#FF8066]
-              text-white
-              rounded-2xl
-              px-5
-              py-4
-              shadow-xl
-            ">
+            <div
+              className="
+                absolute
+                z-20
+                -bottom-5
+                right-0
+                sm:right-5
+                bg-gradient-to-r
+                from-[#FF4B00]
+                to-[#FF8A00]
+                text-white
+                rounded-2xl
+                px-5
+                py-4
+                shadow-xl
+              "
+            >
 
               <p className="text-xs text-white/80">
                 Your Goal
@@ -263,4 +281,3 @@ function Banner() {
 }
 
 export default Banner;
-

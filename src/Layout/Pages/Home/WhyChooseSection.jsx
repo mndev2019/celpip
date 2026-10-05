@@ -39,25 +39,25 @@ const features = [
 
 function WhyChooseSection() {
   return (
-    <section className="bg-[#F4F1FF] py-24 relative overflow-hidden">
+    <section className="bg-[#FFF9F4] py-24 relative overflow-hidden">
       {/* Background Glow */}
-      <div className="absolute -top-20 right-0 w-80 h-80 bg-[#7C3AED]/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#FF6B4A]/10 rounded-full blur-3xl"></div>
+      <div className="absolute -top-20 right-0 w-80 h-80 bg-[#FFE0C2] rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#FFE0C2] rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Heading */}
         <div className="max-w-3xl mb-16">
-          <span className="inline-block bg-[#15112B] text-[#C9B6FF] px-4 py-2 rounded-full text-sm font-semibold">
+          <span className="inline-block bg-[#15112B] text-[#FFB066] px-4 py-2 rounded-full text-sm font-semibold">
             Why Learners Trust Madhav IT Services
           </span>
 
           <h2 className="mt-6 text-4xl md:text-5xl font-bold text-[#15112B] leading-tight">
             Move Forward With
-            <span className="text-[#7C3AED]"> Confidence</span>
+            <span className="text-[#fd6902]"> Confidence</span>
           </h2>
 
-          <div className="w-24 h-1 bg-[#FF6B4A] rounded-full mt-5 mb-6"></div>
+          <div className="w-24 h-1 bg-[#fd6902] rounded-full mt-5 mb-6"></div>
 
           <p className="text-[#4A4565] text-lg leading-8">
             Madhav IT Services provides a faster, more flexible, and trusted English testing experience,
