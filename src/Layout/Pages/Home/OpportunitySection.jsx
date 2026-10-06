@@ -6,36 +6,33 @@ import passport from "../../../assets/Image/banner.jfif";
 import family from "../../../assets/Image/banner.jfif";
 import { useNavigate } from "react-router-dom";
 
-
 const cards = [
   {
     title: "Canadian Residency",
     desc: "Madhav IT Services provides digital solutions and professional support to help businesses and individuals manage their technology needs for Canada-related opportunities.",
     image: student,
-    color: "#7C3AED",
-    path: "/canadian-residency"
+    color: "#FF8A00",
+    path: "/canadian-residency",
   },
   {
     title: "Canadian Citizenship",
     desc: "Madhav IT Services offers reliable technology solutions and digital support designed to simplify processes for clients pursuing opportunities in Canada.",
     image: passport,
     color: "#FF6B4A",
-    path: "/canadian-citizenship"
+    path: "/canadian-citizenship",
   },
   {
     title: "Australian Visa",
     desc: "Madhav IT Services delivers professional digital solutions and technology support for individuals and businesses exploring opportunities in Australia.",
     image: family,
-    color: "#2563EB",
-    path: "/australian-visa"
-
+    color: "#FF8A00", // Blue removed
+    path: "/australian-visa",
   },
 ];
 
-
-
 function OpportunitySection() {
   const navigate = useNavigate();
+
   return (
     <section className="bg-[#FFF9F4] py-24 relative overflow-hidden">
       {/* Background Accent */}
@@ -54,9 +51,11 @@ function OpportunitySection() {
           </h2>
 
           <div className="w-24 h-1 bg-[#fd6902] rounded-full mt-5 mb-6"></div>
+
           <p className="text-[#4A4565] text-lg leading-8">
-            Madhav IT Services English exams are recognized by official immigration authorities,
-            helping candidates meet language requirements for Canada and Australia.
+            Madhav IT Services English exams are recognized by official
+            immigration authorities, helping candidates meet language
+            requirements for Canada and Australia.
           </p>
         </div>
 
@@ -65,8 +64,9 @@ function OpportunitySection() {
           {cards.map((card, i) => (
             <div
               key={i}
-              className={`group rounded-[30px] overflow-hidden bg-[#1F1A3A] text-white transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] ${i === 1 ? "lg:mt-10" : ""
-                }`}
+              className={`group rounded-[30px] overflow-hidden bg-[#1F1A3A] text-white transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] ${
+                i === 1 ? "lg:mt-10" : ""
+              }`}
             >
               {/* Image */}
               <div className="relative overflow-hidden">
@@ -88,7 +88,7 @@ function OpportunitySection() {
               <div className="p-7">
                 <div
                   onClick={() => navigate(card.path)}
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
+                  className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5 cursor-pointer"
                   style={{ backgroundColor: card.color }}
                 >
                   <FiArrowUpRight size={24} />

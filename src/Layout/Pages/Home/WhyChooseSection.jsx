@@ -11,29 +11,32 @@ const features = [
     title: "Quick & Convenient",
     desc: "Complete the English test in a single sitting of around three hours, with results typically available within a few days.",
     icon: FiClock,
-    color: "#7C3AED",
-    bg: "#2A1E4D",
+    color: "#E91E63", // Pink
+    bg: "#4A1F32",
   },
+
   {
     title: "Structured Test Preparation",
     desc: "Access practice tests, study materials, webinars, and guided learning resources designed to support your success.",
     icon: FiBookOpen,
-    color: "#FF6B4A",
+    color: "#FF6B4A", // Orange
     bg: "#3A1E2A",
   },
+
   {
     title: "Practical English Skills",
     desc: "Develop communication skills that are useful for education, professional environments, and everyday life.",
     icon: FiMessageCircle,
-    color: "#2563EB",
-    bg: "#1C2A4A",
+    color: "#14B8A6", // Green
+    bg: "#173A3A",
   },
+
   {
     title: "Recognized & Reliable",
     desc: "Created at the University of British Columbia and aligned with CLB and CEFR language standards.",
     icon: FiShield,
-    color: "#14B8A6",
-    bg: "#173A3A",
+    color: "#F59E0B", // Golden Yellow
+    bg: "#4A3517",
   },
 ];
 
@@ -76,9 +79,8 @@ function WhyChooseSection() {
             return (
               <div
                 key={index}
-                className={`relative group ${
-                  index % 2 === 0 ? "lg:mr-16" : "lg:ml-16 lg:mt-16"
-                }`}
+                className={`relative group ${index % 2 === 0 ? "lg:mr-16" : "lg:ml-16 lg:mt-16"
+                  }`}
               >
                 {/* Connector Dot */}
                 <div

@@ -20,7 +20,7 @@ const FloatingContact = () => {
       <a
         href="tel:+918447733777"
         aria-label="Call us"
-        className="w-12 h-12 rounded-full bg-[#7C4DFF] text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
+        className="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg hover:scale-110 transition-transform"
       >
         <FaPhoneAlt size={20} />
       </a>
