@@ -11,44 +11,44 @@ import expertImg from "../../../assets/Image/webinar.jfif";
 import studyImg from "../../../assets/Image/selfplaced.jfif";
 
 function PreparationSection() {
-  const preparationOptions = [
-    {
-      number: "01",
-      tag: "PRACTICE",
-      title: "Take a Free Practice Test",
-      description:
-        "Get comfortable with the test format, timing, and real question types through our free online practice tests. Review answers and build your confidence in Listening and Reading.",
-      button: "Contact Us",
-      image: practiceImg,
-      icon: FiPlayCircle,
-      iconBg: "bg-[#EEE8FF]",
-      iconColor: "text-[#7C4DFF]",
-    },
-    {
-      number: "02",
-      tag: "EXPERT GUIDANCE",
-      title: "Get Help From Experts",
-      description:
-        "Learn directly from experienced instructors through expert-led webinars with useful tips, strategies, and live Q&A.",
-      button: "Contact Us",
-      image: expertImg,
-      icon: FiCheckCircle,
-      iconBg: "bg-[#F3E8FF]",
-      iconColor: "text-[#A855F7]",
-    },
-    {
-      number: "03",
-      tag: "SELF-PACED",
-      title: "Study at Your Own Pace",
-      description:
-        "Learn whenever it works for you with self-paced courses featuring 50+ instructional videos, quizzes, and sample response analysis.",
-      button: "Contact Us",
-      image: studyImg,
-      icon: FiBookOpen,
-      iconBg: "bg-[#EDE9FE]",
-      iconColor: "text-[#6D5DFB]",
-    },
-  ];
+const preparationOptions = [
+  {
+    number: "01",
+    tag: "PRACTICE",
+    title: "Take a Free Practice Test",
+    description:
+      "Get comfortable with the test format, timing, and real question types through our free online practice tests. Review answers and build your confidence in Listening and Reading.",
+    button: "Contact Us",
+    image: practiceImg,
+    icon: FiPlayCircle,
+    iconBg: "bg-[#FFF3E0]",
+    iconColor: "text-[#F97316]",
+  },
+  {
+    number: "02",
+    tag: "EXPERT GUIDANCE",
+    title: "Get Help From Experts",
+    description:
+      "Learn directly from experienced instructors through expert-led webinars with useful tips, strategies, and live Q&A.",
+    button: "Contact Us",
+    image: expertImg,
+    icon: FiCheckCircle,
+    iconBg: "bg-[#FFEDD5]",
+    iconColor: "text-[#EA580C]",
+  },
+  {
+    number: "03",
+    tag: "SELF-PACED",
+    title: "Study at Your Own Pace",
+    description:
+      "Learn whenever it works for you with self-paced courses featuring 50+ instructional videos, quizzes, and sample response analysis.",
+    button: "Contact Us",
+    image: studyImg,
+    icon: FiBookOpen,
+    iconBg: "bg-[#FFF7ED]",
+    iconColor: "text-[#F59E0B]",
+  },
+];
 
   return (
     <section className="relative overflow-hidden bg-[#FFF9F4] py-20 sm:py-24 lg:py-28">
