@@ -9,8 +9,10 @@ import {
 import practiceImg from "../../../assets/Image/practice.jfif";
 import expertImg from "../../../assets/Image/webinar.jfif";
 import studyImg from "../../../assets/Image/selfplaced.jfif";
+import { useNavigate } from "react-router-dom";
 
 function PreparationSection() {
+  const navigate = useNavigate();
 const preparationOptions = [
   {
     number: "01",
@@ -144,6 +146,7 @@ const preparationOptions = [
 
                   {/* Button */}
                   <button
+                  onClick={()=> navigate('/contact')}
                     type="button"
                     className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#211A3A] px-5 py-3 text-sm font-bold text-white transition-all duration-300 hover:bg-[#F56700] hover:shadow-lg hover:shadow-[#7C4DFF]/25"
                   >

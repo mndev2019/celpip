@@ -7,6 +7,8 @@ import About from './Layout/Pages/About'
 import CanadianResidency from './Layout/Pages/Immigrate/CanadianResidency'
 import CanadianCitizenship from './Layout/Pages/Immigrate/CanadianCitizenship'
 import AustralianVisa from './Layout/Pages/Immigrate/AustralianVisa'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 
@@ -43,6 +45,14 @@ function App() {
   return (
     <>
       <RouterProvider router={ThemeRoute} />
+       <ToastContainer
+    position="top-right"
+    autoClose={4000}
+    hideProgressBar={false}
+    closeOnClick
+    pauseOnHover
+    draggable
+  />
 
     </>
   )

@@ -1,12 +1,16 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
 import {
   FiArrowRight,
-  FiCheckCircle,
+
   FiMail,
   FiMessageSquare,
   FiPhone,
   FiUser,
 } from "react-icons/fi";
+import { BaseUrl } from "../../../API/BaseUrl";
+
 
 function EnquiryForm() {
   const [formData, setFormData] = useState({
@@ -28,10 +32,18 @@ function EnquiryForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    console.log("Enquiry Data:", formData);
+  try {
+    const response = await axios.post(
+      `${BaseUrl}/contact`,
+      formData
+    );
+
+    console.log("Enquiry submitted:", response.data);
+
+    toast.success("Enquiry submitted successfully!");
 
     setSubmitted(true);
 
@@ -46,7 +58,18 @@ function EnquiryForm() {
     setTimeout(() => {
       setSubmitted(false);
     }, 4000);
-  };
+  } catch (error) {
+    console.error(
+      "Enquiry submission error:",
+      error.response?.data || error.message
+    );
+
+    toast.error(
+      error.response?.data?.message ||
+        "Unable to submit enquiry. Please try again."
+    );
+  }
+};
 
   return (
     <div className="relative overflow-hidden rounded-[30px] border border-[#f7e0ce] bg-white p-6 shadow-[0_20px_60px_rgba(88,61,145,0.10)] sm:p-8 lg:p-10">
@@ -72,22 +95,7 @@ function EnquiryForm() {
           </p>
         </div>
 
-        {/* Success Message */}
-        {submitted && (
-          <div className="mb-6 flex items-start gap-3 rounded-2xl border border-green-200 bg-green-50 p-4 text-green-700">
-            <FiCheckCircle className="mt-0.5 shrink-0" size={20} />
-
-            <div>
-              <p className="font-bold">
-                Enquiry submitted successfully!
-              </p>
-
-              <p className="mt-1 text-sm">
-                Thank you for reaching out. We will get back to you soon.
-              </p>
-            </div>
-          </div>
-        )}
+     
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
