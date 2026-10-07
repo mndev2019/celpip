@@ -13,6 +13,7 @@ import { BaseUrl } from "../../../API/BaseUrl";
 
 
 function EnquiryForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -33,43 +34,44 @@ function EnquiryForm() {
   };
 
   const handleSubmit = async (e) => {
-  e.preventDefault();
+    e.preventDefault();
+    setIsSubmitting(true);
 
-  try {
-    const response = await axios.post(
-      `${BaseUrl}/contact`,
-      formData
-    );
+    try {
+      const response = await axios.post(
+        `${BaseUrl}/contact`,
+        formData
+      );
 
-    console.log("Enquiry submitted:", response.data);
+      console.log("Enquiry submitted:", response.data);
 
-    toast.success("Enquiry submitted successfully!");
+      toast.success("Enquiry submitted successfully!");
 
-    setSubmitted(true);
+      setSubmitted(true);
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
 
-    setTimeout(() => {
-      setSubmitted(false);
-    }, 4000);
-  } catch (error) {
-    console.error(
-      "Enquiry submission error:",
-      error.response?.data || error.message
-    );
+      setTimeout(() => {
+        setSubmitted(false);
+      }, 4000);
+    } catch (error) {
+      console.error(
+        "Enquiry submission error:",
+        error.response?.data || error.message
+      );
 
-    toast.error(
-      error.response?.data?.message ||
+      toast.error(
+        error.response?.data?.message ||
         "Unable to submit enquiry. Please try again."
-    );
-  }
-};
+      );
+    }
+  };
 
   return (
     <div className="relative overflow-hidden rounded-[30px] border border-[#f7e0ce] bg-white p-6 shadow-[0_20px_60px_rgba(88,61,145,0.10)] sm:p-8 lg:p-10">
@@ -95,7 +97,7 @@ function EnquiryForm() {
           </p>
         </div>
 
-     
+
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
@@ -170,20 +172,23 @@ function EnquiryForm() {
           {/* Button */}
           <button
             type="submit"
-            className="group inline-flex w-full items-center justify-center gap-3 rounded-2xl   bg-gradient-to-r
-                  from-[#FF3D00]
-                  via-[#FF6500]
-                  to-[#FF9D00]
-                  hover:from-[#E93600]
-                  hover:via-[#F45700]
-                  hover:to-[#F28A00]
-                  text-white px-6 py-4 text-sm font-bold text-white shadow-lg shadow-[#7C4DFF]/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-[#7C4DFF]/30"
+            disabled={isSubmitting}
+            className={`group inline-flex w-full items-center justify-center gap-3 rounded-2xl
+    bg-gradient-to-r from-[#FF3D00] via-[#FF6500] to-[#FF9D00]
+    text-white px-6 py-4 text-sm font-bold
+    shadow-lg transition-all duration-300
+    ${isSubmitting
+                ? "cursor-not-allowed opacity-60"
+                : "hover:-translate-y-0.5 hover:from-[#E93600] hover:via-[#F45700] hover:to-[#F28A00] hover:shadow-xl"
+              }`}
           >
-            Send Enquiry
+            {isSubmitting ? "Submitting..." : "Send Enquiry"}
 
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 transition-transform duration-300 group-hover:translate-x-1">
-              <FiArrowRight size={17} />
-            </span>
+            {!isSubmitting && (
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15 transition-transform duration-300 group-hover:translate-x-1">
+                <FiArrowRight size={17} />
+              </span>
+            )}
           </button>
 
           <p className="text-center text-xs text-[#918A9F]">
